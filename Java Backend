@@ -1,0 +1,41 @@
+import java.util.Scanner; // I use scanner because it's command line.
+
+public class Login {
+public void run() {
+    Scanner scan = new Scanner (new File("the\\dir\\Vinove175"));
+    Scanner keyboard = new Scanner (System.in);
+    String user = scan.nextLine();
+    String pass = scan.nextLine(); // looks at selected file in scan
+
+    String inpUser = keyboard.nextLine();
+    String inpPass = keyboard.nextLine(); // gets input from user
+
+    if (inpUser.equals(user) && inpPass.equals(pass)) {
+        System.out.print("Welcome ");
+    } else {
+        System.out.print("your error message");
+    }
+import java.util.Scanner;
+
+public class LoginMain {
+
+public static void main(String[] args) {
+
+    String Username;
+    String Password;
+
+    Password = "123";
+    Username = "wisdom";
+
+    Scanner input1 = new Scanner(System.in);
+    System.out.println("Enter Username : ");
+    String username = input1.next();
+
+    Scanner input2 = new Scanner(System.in);
+    System.out.println("Enter Password : ");
+    String password = input2.next();
+
+    if (username.equals(Username) && password.equals(Password)) {
+
+        System.out.println("Access Granted! Welcome!");
+    } 
